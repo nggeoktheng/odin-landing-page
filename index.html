@@ -2,18 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
         <title>Camper's Lifestyle Company</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="hero">
+        <div class="header">
             <div class="top-header">
                 <h1 class="logo-text">Camper's Lifestyle Company</h1>
-                <div class="links">
-                    <h1 class="header-link one">Who we are</h1>
-                    <h1 class="header-link two">SHOP</h1>
-                    <h1 class="header-link three">FAQ </h1>
-                </div>
+                <ul class="header-links">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#shop">SHOP</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
             </div>
             <div class="bottom-header">
                 <div class="left-part">
@@ -23,11 +23,11 @@
                     </div>
                     <button class="shop-now">SHOP NOW</button>
                 </div>
-                <div class="company-logo"><img src="images/company-logo.jpg" alt="company-logo"></div>
+                <div class="header-photo"><img src="images/header-photo.jpg" alt="header-photo"></div>
             </div>
         </div>
         <div class="information-contatiner">
-            <h2 class="information-header">SHOP</h2>
+            <a id="shop" class="information-header" href="#"><h2>SHOP</h2></a>
             <div class="information-boxes">
                 <div>
                     <h3 class="information-title">Apparel</h3>
@@ -54,11 +54,14 @@
         <div class="action-container">
             <div class="action">
                 <div class="action-left">
-                    <h4>Early bird discount with first 100 customers</h4>
-                    <P>Enjoy 25% off your purchase with code: CAMPERS25</P>
+                    <h3 class="action-title">Early bird discount with first 100 customers</h4>
+                    <P class="action-text">Enjoy 25% off your purchase with code: &lt;&lt;CAMPERS25&gt;&gt; Terms and conditions apply.</P>
                 </div>
                 <button class="shop-now action-button">SHOP NOW</button>
             </div>
+        </div>
+        <div class="footer">
+            <p>Copyright © Camper's Lifestyle Company 2022</p>
         </div>
     </body>
 </html>

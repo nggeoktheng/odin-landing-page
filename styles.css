@@ -4,23 +4,60 @@
     box-sizing: border-box;
 }
 
-.hero {
+.header,
+.footer {
     background-color: #1f2937;
+    height: 500px;
 }
 
 .top-header,
 .bottom-header,
+.footer,
 button,
 .action {
     color: #f9faf8;
 }
 
-.logo-text {
-    font-size: 24px;
+.top-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    margin-bottom: 80px;
 }
 
-.header-link {
+.logo-text {
+    font-size: 24px;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+a {
+    color: #f9faf8;
     font-size: 18px;
+    text-decoration: none;
+}
+
+.bottom-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 30px 20px;
+}
+
+.left-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 20px;
 }
 
 .main-text {
@@ -35,7 +72,7 @@ button {
     border-color: #3882f6;
     text-align: center;
     padding: 8px;
-    margin: 8px 20px;
+    margin: 10px 20px;
     flex-shrink: 0;
 }
 
@@ -44,33 +81,6 @@ img {
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.top-header {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 8px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.links {
-    display: flex;
-    column-gap: 18px;
-}
-
-.bottom-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 30px 20px;
-}
-
-.left-text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0 20px;
 }
 
 .information-header {
@@ -98,8 +108,8 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
     padding: 180px;
-
 }
 
 .quote-text {
@@ -107,30 +117,40 @@ img {
     font-size: 36px;
     font-weight: light;
     font-style: italic;
+    padding: 40px 80px 0;
 }
 
 .quote-author {
     font-weight: bold;
     margin-left: auto;
+    padding-right: 100px;
 }
 
 .action-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 150px;
+    padding: 120px;
 }
 
 .action {
     background-color: #3882f6;
     border-radius: 5px;
-    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    flex: initial;
+    padding: 20px 50px;
+    justify-content: space-around;
     align-items: center;
 }
 
 .action-button {
     border-color: #e5e7eb;
     flex-shrink: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
 }
